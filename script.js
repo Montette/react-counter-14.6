@@ -1,5 +1,6 @@
 var Counter = React.createClass({
     getInitialState: function() {
+        console.log('metoda pokazująca początkowy stan komponentu');
         return {
             counter: 0
         };
@@ -19,10 +20,6 @@ var Counter = React.createClass({
     
      getDefaultProps: function() {
     console.log('metoda, ustawiająca wartości props nieprzekazane do komponentu');
-    },
-    
-    getInitialState: function() {
-        console.log('metoda pokazująca początkowy stan komponentu');
     },
 
     componentWillMount: function() {
