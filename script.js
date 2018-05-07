@@ -36,6 +36,7 @@ var Counter = React.createClass({
 
     shouldComponentUpdate: function() {
         console.log('metoda, zwracająca true albo false, w zależności od tego czy chcemy by komponent się zmieni po otrzymaniu nowych właściwości');
+        return true;
     },
 
     componentWillUpdate: function() {
